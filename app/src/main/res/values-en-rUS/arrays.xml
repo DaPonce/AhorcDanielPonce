@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="idioma">
+        <item >A</item>
+        <item >B</item>
+        <item >C</item>
+        <item >D</item>
+        <item >E</item>
+        <item >F</item>
+        <item >G</item>
+        <item >H</item>
+        <item >I</item>
+        <item >J</item>
+        <item >K</item>
+        <item >L</item>
+        <item >M</item>
+        <item >N</item>
+        <item >O</item>
+        <item >P</item>
+        <item >Q</item>
+        <item >R</item>
+        <item >S</item>
+        <item >T</item>
+        <item >U</item>
+        <item >V</item>
+        <item >W</item>
+        <item >X</item>
+        <item >Y</item>
+        <item >Z</item>
+    </string-array>
+    <string-array name="idioma_palabras">
+        <item >CRAZY</item>
+        <item >HAND</item>
+        <item >CLOUD</item>
+        <item >YELLOW</item>
+        <item >WONDERFUL</item>
+        <item >STATISTICS</item>
+        <item >UNIVERSITY</item>
+        <item >PULLOVER</item>
+        <item >TRAIN</item>
+        <item >ONE</item>
+        <item >WIRELESS</item>
+        <item >COMPUTER</item>
+        <item >MOUSE</item>
+        <item >BOX</item>
+        <item >FILE</item>
+        <item >PATH</item>
+        <item >RED</item>
+    </string-array>
+    <array name="imagenes">
+        <item >@drawable/a</item>
+        <item >@drawable/ah</item>
+        <item >@drawable/aho</item>
+        <item >@drawable/ahor</item>
+        <item >@drawable/ahorc</item>
+        <item >@drawable/ahorca</item>
+        <item >@drawable/ahorcad</item>
+        <item >@drawable/ahorcado</item>
+    </array>
+</resources>
