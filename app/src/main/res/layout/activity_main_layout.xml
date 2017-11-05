@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-
-    tools:context="com.daniel.ponce.MainActivity">
+    android:paddingBottom="1dp"
+    tools:context="com.daniel.ponce.MainActivity"
+    android:fitsSystemWindows="true">
 
    <LinearLayout
        android:layout_width="0dp"
@@ -19,6 +20,7 @@
            android:layout_height="0dp"
            android:layout_weight="4"
            android:src="@mipmap/ic_launcher"
+           android:background="@drawable/img_border"
            android:scaleType="centerCrop"/>
        <Button
            android:id="@+id/bGenerar"
@@ -26,6 +28,7 @@
            android:layout_height="0dp"
            android:layout_weight="1"
            android:onClick="generar"
+           android:background="@drawable/new_word_button_selector"
            android:text="@string/nueva_palabra"/>
    </LinearLayout>
 
@@ -33,20 +36,22 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="4"
+        android:layout_marginTop="1dp"
         android:orientation="vertical">
 
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
-            android:background="@drawable/fondo">
+            >
 
             <GridLayout
                 android:id="@+id/jpTeclas"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:columnCount="8"
-                android:rowCount="6"/>
+                android:rowCount="6"
+                android:background="@drawable/fondo"/>
         </HorizontalScrollView>
 
         <HorizontalScrollView

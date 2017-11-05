@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Hangedman</string>
+    <string name="app_name">Ahorc_DanielPonceGranado</string>
     <string name="nueva_palabra">New word</string>
     <string name="acertado">You\'re right! The word was</string>
     <string name="fallado">You Lose! The correct word was</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Ahorcado</string>
+    <string name="app_name">Ahorc_DanielPonceGranado</string>
     <string name="nueva_palabra">Nueva palabra</string>
     <string name="acertado">¡Has acertado! La palabra era</string>
     <string name="fallado">¡Has perdido! La palabra correcta era</string>
