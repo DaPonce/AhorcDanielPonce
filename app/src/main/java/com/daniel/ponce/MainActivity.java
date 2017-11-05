@@ -2,6 +2,7 @@ package com.daniel.ponce;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
@@ -87,8 +88,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             this.generarBotonesLetrasPalabraSecreta();
 
         } else {
-            Toast.makeText(this, "No hay palabras para adivinar",
-                    Toast.LENGTH_LONG).show();
+            Toast toast = Toast.makeText(this, this.getResources().getString(R.string.no_palabras), Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.CENTER,0,0);
+            toast.show();
         }
     }
 
@@ -189,7 +191,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (posicionesConLetraElegida != null) {
             this.visualizarLetraAcertada(posicionesConLetraElegida, letraElegida);
             if (aciertos == palabraSecreta.length()) {
-                Toast.makeText(this, "¡Has acertado!", Toast.LENGTH_LONG).show();
+                Toast toast = Toast.makeText(this, this.getResources().getString(R.string.acertado) + " " + palabraSecreta, Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.show();
                 this.mNuevaPalabra();
             }
         } else {
@@ -202,7 +206,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (fallos <= gestora.maximoFallos()) {
             imagen.setImageDrawable(gestora.imagenFallos(fallos));
             if (fallos == gestora.maximoFallos()) {
-                Toast.makeText(this, "¡Has perdido!. La palabra era " + palabraSecreta, Toast.LENGTH_LONG).show();
+                Toast toast = Toast.makeText(this, this.getResources().getString(R.string.fallado) + " " + palabraSecreta, Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.show();
                 mNuevaPalabra();
             }
         }
